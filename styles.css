@@ -20,7 +20,7 @@ Ensure content is responsive and meets WCAG requirements by testing the full ran
 */
 
 body {
-background-color: rgb(213,225,239,255);
+background: hsl(216, 15%, 48%);
 font-Family: "Outfit";
 font-weight: 400, 700;
 }
