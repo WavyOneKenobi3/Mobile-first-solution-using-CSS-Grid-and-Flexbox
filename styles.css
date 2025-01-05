@@ -25,6 +25,10 @@ font-Family: "Outfit";
 font-weight: 400, 700;
 }
 
+.border_card {
+width: 1440px;
+    }
+
 p {
 font-size: 15px;
 }
