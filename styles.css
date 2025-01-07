@@ -1,41 +1,44 @@
-@import url(https://fonts.google.com/specimen/Outfit);
-
-
-/*The designs were created to the following widths: 
-
-- Mobile: 375px
-- Desktop: 1440px
-> 💡 These are just the design sizes. 
-Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens.
-
-## Colors
-
-- White: hsl(0, 0%, 100%)
-
-- Slate 300: hsl(212, 45%, 89%)
-- Slate 500: hsl(216, 15%, 48%)
-- Slate 900: hsl(218, 44%, 22%)
-
-## Typography
-*/
-
+/* General styles */
 body {
-background: hsl(216, 15%, 48%);
-font-Family: "Outfit";
-font-weight: 400, 700;
+  background-color: hsl(212, 45%, 89%);
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.border_card {
-width: 1440px;
-    }
-
-p {
-font-size: 15px;
+/* Card container */
+.card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
 }
 
-.attribution { 
-    font-size: 11px; text-align: center; 
+/* QR Code image */
+.qr-code {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+
+/* Heading */
+.card h1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: hsl(218, 44%, 22%);
+  margin-bottom: 15px;
+}
+
+/* Paragraph text */
+.card p {
+  font-size: 15px;
+  color: hsl(216, 15%, 48%);
+  line-height: 1.6;
 }
