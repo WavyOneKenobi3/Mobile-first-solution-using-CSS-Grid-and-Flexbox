@@ -13,27 +13,28 @@ body {
 /* Card container */
 .card {
   background-color: hsl(0, 0%, 100%);
-  border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
   padding: 20px;
-  width: 300px;
+  width: 320px; /* Default for mobile: 375px design width */
   text-align: center;
 }
 
 /* QR Code image */
 .qr-code {
   width: 100%;
-  max-width: 250px;
-  border-radius: 10px;
+  max-width: 280px; /* Adjusted for better spacing */
+  border-radius: 15px; /* Rounded corners for the QR code */
   margin-bottom: 20px;
 }
 
 /* Heading */
 .card h1 {
-  font-size: 18px;
+  font-size: 20px; /* Larger text for mobile */
   font-weight: 700;
   color: hsl(218, 44%, 22%);
   margin-bottom: 15px;
+  line-height: 1.4; /* Better spacing */
 }
 
 /* Paragraph text */
@@ -42,3 +43,48 @@ body {
   color: hsl(216, 15%, 48%);
   line-height: 1.6;
 }
+
+/* Responsive styles */
+
+/* Mobile: 375px */
+@media (max-width: 375px) {
+  .card {
+    width: 100%; /* Ensure it adapts perfectly to smaller screens */
+    padding: 15px;
+  }
+
+  .card h1 {
+    font-size: 18px; /* Slightly smaller for narrower screens */
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+}
+
+/* Desktop: 1440px */
+@media (min-width: 1440px) {
+  body {
+    height: 100vh;
+    padding: 40px; /* Add padding for a balanced desktop look */
+  }
+
+  .card {
+    width: 400px; /* Increase width for desktop design */
+    padding: 30px; /* Add more padding for desktop */
+  }
+
+  .card h1 {
+    font-size: 24px; /* Larger heading for desktops */
+  }
+
+  .card p {
+    font-size: 16px;
+  }
+}
+
+/* Design notes:
+   - The designs were created to the following widths:
+     Mobile: 375px
+     Desktop: 1440px
+*/
